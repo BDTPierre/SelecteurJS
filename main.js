@@ -32,8 +32,15 @@ document.getElementById("button").addEventListener("click", function() {
 // Utilisez getElementsByClassName ou getElementsByTagName pour les sélectionner.
 // Modifiez le texte de tous ces éléments simultanément.
 
-let div2 = document.getElementsByClassName("div");
+let classJs = document.getElementsByClassName("classname");
+for (let i = 0; i < classJs.length; i++) {
+    classJs[i].innerHTML = "ça va?"
+}
 
+// let classes = document.getElementsByTagName("div");
+// for (let i = 0; i < classes.length; i++) {
+//     classes[i].innerHTML = "oui et toi?"
+// }
 
 // Exercice 5: Création et Insertion d'Éléments
 // Objectif : Créer un nouvel élément et l'ajouter au DOM.
@@ -41,13 +48,21 @@ let div2 = document.getElementsByClassName("div");
 // Ajoutez du texte à cet élément.
 // Insérez cet élément dans le DOM à l'endroit souhaité.
 
+let newdiv = document.createElement("div");
+newdiv.innerHTML = "Bien joué";
+document.body.appendChild(newdiv)
+
 // Exercice 6: Manipulation des Attributs
 // Objectif : Modifier les attributs d'un élément (par exemple, href d'un lien).
-
 // Sélectionnez un élément (par exemple, un lien).
 // Utilisez getAttribute pour lire un attribut existant.
 // Modifiez cet attribut en utilisant setAttribute.
 
+let monlien = document.getElementById("lien")
+let newlien = monlien.getAttribute("href")
+monlien.setAttribute("href", "https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Global_Objects/Array/push")
+
+// pourquoi utiliser 'getAttribute' ? parce que même sans ça marche.
 
 // Exercice 7: Utilisation de innerHTML
 // Objectif : Modifier le contenu HTML d'un élément.
