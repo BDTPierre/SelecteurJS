@@ -118,5 +118,11 @@ limage.style.height = "auto"
 // Créez une liste ul ou ol vide dans votre HTML.
 // Utilisez JavaScript pour ajouter des éléments li à la liste en utilisant appendChild ou insertBefore.
 
-liiiste.innerHTML = "<li>Mangue</li><li>Orange</li><li>Pomme</li><li>Fraise</li>"
-liiiste.appendChild()
+// liiiste.innerHTML = "<li>Mangue</li><li>Orange</li><li>Pomme</li><li>Fraise</li>"
+// liiiste.appendChild() = "<li>Mangue</li><li>Orange</li><li>Pomme</li><li>Fraise</li>"
+
+let btn = document.getElementById("liiiste");
+btn.addEventListener("click", function() {
+    let lielement = document.createElement("li");
+    liiiste.appendChild(lielement);
+})
