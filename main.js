@@ -98,7 +98,8 @@ d.addEventListener("click", function() {
 // Sélectionnez un élément.
 // Modifiez différents styles CSS directement en utilisant element.style.property (par exemple, element.style.backgroundColor).
 
-
+bs.style.color = "green" 
+bs.style.fontSize = "30px"
 
 // Exercice 10: Travailler avec setAttribute et getAttribute
 // Objectif : Utiliser setAttribute et getAttribute pour manipuler les attributs d'un élément, le "src" d'une image par exemple.
@@ -106,9 +107,16 @@ d.addEventListener("click", function() {
 // Utilisez getAttribute pour lire un de ses attributs.
 // Changez cet attribut avec setAttribute.
 
+limage.getAttribute("src");
+limage.setAttribute("src", "images/bali.jpg")
 
+limage.style.width = "250px"
+limage.style.height = "auto"
 
 // Exercice 11: Création et Manipulation de Listes
 // Objectif : Créer une liste dynamique et la manipuler.
 // Créez une liste ul ou ol vide dans votre HTML.
 // Utilisez JavaScript pour ajouter des éléments li à la liste en utilisant appendChild ou insertBefore.
+
+liiiste.innerHTML = "<li>Mangue</li><li>Orange</li><li>Pomme</li><li>Fraise</li>"
+liiiste.appendChild()
